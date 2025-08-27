@@ -83,6 +83,12 @@ const Footer = () => {
                   Janga, Paulista/PE
                 </span>
               </div>
+              <div className="flex items-start space-x-3">
+                <Phone size={16} className="text-primary mt-1" />
+                <span className="text-gray-300 text-sm">
+                +55 (81) 98711-8820
+                </span>
+              </div>
             </div>
           </div>
         </div>
