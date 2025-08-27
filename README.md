@@ -1,4 +1,4 @@
-# Site desenvolvido para a Vereadora Suzi Racinha - SOS Tudo pelo Social
+# Site desenvolvido para o projeto social SOS Tudo Pelo Social
 
 Site moderno e responsivo desenvolvido para a Vereadora Suzi Racinha de Paulista-PE, apresentando seus programas sociais e facilitando o contato com a comunidade.
 
@@ -182,7 +182,7 @@ Para dúvidas sobre o código ou modificações, consulte:
 
 ## 📄 Licença
 
-Este projeto foi desenvolvido por Kevin Alcantara para a Vereadora Suzi Racinha e seu uso é restrito aos fins acordados.
+Este projeto foi desenvolvido por Kevin Alcantara para o projeto SOS Tudo Pelo Social e seu uso é restrito aos fins acordados.
 
 ---
 
