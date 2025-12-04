@@ -112,7 +112,7 @@ const Footer = () => {
         <div className="border-t border-gray-700 mt-8 pt-8 text-center">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm mb-4 md:mb-0">
-              © 2025 Kevin Alcantara - SOS Tudo pelo Social. Todos os direitos reservados.
+              © 2025 K&A - SOS Tudo pelo Social. Todos os direitos reservados.
             </p>
             <div className="flex items-center space-x-1 text-gray-400 text-sm">
               <span>Feito com</span>
