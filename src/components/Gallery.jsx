@@ -10,6 +10,20 @@ import gallery5 from '../assets/programs/5.jpg';
 import gallery6 from '../assets/programs/6.jpg';
 import gallery7 from '../assets/programs/8.jpg';
 import gallery8 from '../assets/programs/7.jpg';
+import gallery9 from '../assets/programs/9.jpeg';
+import gallery10 from '../assets/programs/10.jpeg';
+import gallery11 from '../assets/programs/11.jpeg';
+import gallery12 from '../assets/programs/12.jpeg';
+import gallery13 from '../assets/programs/13.jpeg';
+import gallery14 from '../assets/programs/14.jpeg';
+import gallery15 from '../assets/programs/15.jpeg';
+import gallery16 from '../assets/programs/16.jpeg';
+import gallery17 from '../assets/programs/17.jpeg';
+import gallery18 from '../assets/programs/18.jpeg';
+import gallery19 from '../assets/programs/19.jpeg';
+import gallery20 from '../assets/programs/20.jpeg';
+import gallery21 from '../assets/programs/21.jpeg';
+import gallery22 from '../assets/programs/22.jpeg';
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState(null);
@@ -23,7 +37,21 @@ const Gallery = () => {
     { src: gallery5, alt: "Terapia ocupacional", title: "Terapias" },
     { src: gallery6, alt: "Oficina com crianças", title: "Oficinas Educativas" },
     { src: gallery7, alt: "Atividade física para idosos", title: "Cuidar +" },
-    { src: gallery8, alt: "Exercícios para terceira idade", title: "Saúde do Idoso" }
+    { src: gallery8, alt: "Exercícios para terceira idade", title: "Saúde do Idoso" },
+    { src: gallery9, alt: "Ação Social e Solidariedade", title: "Compromisso Social" },
+    { src: gallery10, alt: "Entregas para a comunidade", title: "Apoio Comunitário" },
+    { src: gallery11, alt: "Atividades recreativas", title: "Lazer e Cultura" },
+    { src: gallery12, alt: "Momentos de integração", title: "União e Afeto" },
+    { src: gallery13, alt: "Apoio às famílias", title: "Assistência Familiar" },
+    { src: gallery14, alt: "Eventos beneficentes", title: "Solidariedade em Ação" },
+    { src: gallery15, alt: "Cuidado com o próximo", title: "Amor ao Próximo" },
+    { src: gallery16, alt: "Desenvolvimento social", title: "Crescimento Juntos" },
+    { src: gallery17, alt: "Projetos educacionais", title: "Educação para Todos" },
+    { src: gallery18, alt: "Saúde e bem-estar", title: "Vida Saudável" },
+    { src: gallery19, alt: "Inclusão social", title: "Inclusão Verdadeira" },
+    { src: gallery20, alt: "Fortalecendo vínculos", title: "Laços Comunitários" },
+    { src: gallery21, alt: "Esperança e renovação", title: "Futuro Melhor" },
+    { src: gallery22, alt: "Transformando vidas", title: "Transformação Social" }
   ];
 
   const openModal = (image, index) => {
@@ -61,13 +89,13 @@ const Gallery = () => {
 
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           {galleryImages.map((image, index) => (
-            <div 
+            <div
               key={index}
               className="relative group cursor-pointer overflow-hidden rounded-lg shadow-md hover:shadow-lg transition-all duration-300"
               onClick={() => openModal(image, index)}
             >
-              <img 
-                src={image.src} 
+              <img
+                src={image.src}
                 alt={image.alt}
                 className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
               />
@@ -90,14 +118,14 @@ const Gallery = () => {
               >
                 <X size={32} />
               </button>
-              
+
               <button
                 onClick={prevImage}
                 className="absolute left-4 top-1/2 transform -translate-y-1/2 text-white hover:text-gray-300 z-10"
               >
                 <ChevronLeft size={32} />
               </button>
-              
+
               <button
                 onClick={nextImage}
                 className="absolute right-4 top-1/2 transform -translate-y-1/2 text-white hover:text-gray-300 z-10"
@@ -105,12 +133,12 @@ const Gallery = () => {
                 <ChevronRight size={32} />
               </button>
 
-              <img 
-                src={selectedImage.src} 
+              <img
+                src={selectedImage.src}
                 alt={selectedImage.alt}
                 className="max-w-full max-h-full object-contain"
               />
-              
+
               <div className="absolute bottom-4 left-4 right-4 text-white text-center">
                 <h3 className="text-xl font-semibold mb-2"></h3>
                 <p className="text-sm opacity-90"></p>
@@ -123,7 +151,7 @@ const Gallery = () => {
           <p className="text-gray-600 mb-6">
             Acompanhe nossas redes sociais para ver mais fotos e vídeos das nossas ações.
           </p>
-          <a 
+          <a
             href="https://www.instagram.com/SosTudopelosocial/"
             target='_blank'
             rel='noopener noreferrer'
