@@ -2,14 +2,14 @@ import React from 'react';
 import { GraduationCap, Heart, Apple, Activity, Package, Smile, Scale, HandHeart } from 'lucide-react';
 
 // Importando algumas imagens dos programas
-import educarImage from '../assets/programs/zhAd6YwbnHLZ.jpg';
-import maesImage from '../assets/programs/peUOxajKxapB.jpg';
-import nutrirImage from '../assets/programs/vdanSVk1DBBB.jpg';
-import cuidarImage from '../assets/programs/n9AT1W3Iz6dB.jpg';
-import nutrindoImage from '../assets/programs/wzH0mHYCHtrw.jpg';
-import sorrisoImage from '../assets/programs/yNs4Dhu9yOvR.jpg';
-import sosImage from '../assets/programs/CuOeKXSOfHHV.jpg';
-import campanhasImage from '../assets/programs/SV1xvtiyZ9Da.jpg';
+import educarImage from '../assets/programs/1.jpg';
+import maesImage from '../assets/programs/2.jpg';
+import nutrirImage from '../assets/programs/3.jpg';
+import cuidarImage from '../assets/programs/4.jpg';
+import nutrindoImage from '../assets/programs/5.jpg';
+import sorrisoImage from '../assets/programs/6.jpg';
+import sosImage from '../assets/programs/7.jpg';
+import campanhasImage from '../assets/programs/8.jpg';
 
 const Programs = () => {
   const programs = [
@@ -97,8 +97,8 @@ const Programs = () => {
             return (
               <div key={program.id} className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow overflow-hidden">
                 <div className="relative h-48 overflow-hidden">
-                  <img 
-                    src={program.image} 
+                  <img
+                    src={program.image}
                     alt={program.title}
                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                   />
@@ -106,11 +106,11 @@ const Programs = () => {
                     <IconComponent className="text-white" size={24} />
                   </div>
                 </div>
-                
+
                 <div className="p-6">
                   <h3 className="text-xl font-bold text-gray-800 mb-3">{program.title}</h3>
                   <p className="text-gray-600 mb-4 text-sm leading-relaxed">{program.description}</p>
-                  
+
                   <div className="space-y-2">
                     {program.features.map((feature, index) => (
                       <div key={index} className="flex items-center space-x-2">
@@ -126,8 +126,8 @@ const Programs = () => {
         </div>
 
         <div className="text-center mt-12">
-          <a 
-            href="#contato" 
+          <a
+            href="#contato"
             className="bg-primary text-white px-8 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors inline-block"
           >
             Saiba como participar

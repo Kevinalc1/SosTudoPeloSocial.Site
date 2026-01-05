@@ -13,18 +13,18 @@ const Footer = () => {
               <img src={logo} alt="SOS Tudo pelo Social" className="h-12 w-auto" />
             </div>
             <p className="text-gray-300 mb-6 max-w-md">
-              Trabalhando incansavelmente por uma sociedade mais inclusiva, justa e acolhedora 
+              Trabalhando incansavelmente por uma sociedade mais inclusiva, justa e acolhedora
               para todas as famílias.
             </p>
             <div className="flex space-x-4">
-              <a 
-                href="https://www.instagram.com/SosTudopelosocial" 
+              <a
+                href="https://www.instagram.com/SosTudopelosocial"
                 className="bg-gray-700 p-3 rounded-full hover:bg-primary transition-colors"
               >
                 <Instagram size={20} />
               </a>
-              <a 
-                href="https://mail.google.com/mail/u/0/#inbox?compose=new/sostudopelosocial@gmail.com" 
+              <a
+                href="https://mail.google.com/mail/u/0/#inbox?compose=new/sostudopelosocial@gmail.com"
                 className="bg-gray-700 p-3 rounded-full hover:bg-primary transition-colors"
               >
                 <Mail size={20} />
@@ -86,7 +86,7 @@ const Footer = () => {
               <div className="flex items-start space-x-3">
                 <Phone size={16} className="text-primary mt-1" />
                 <span className="text-gray-300 text-sm">
-                +55 (81) 98711-8820
+                  +55 (81) 98711-8820
                 </span>
               </div>
             </div>
