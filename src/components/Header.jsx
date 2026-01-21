@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { Menu, X, Instagram, Facebook, Phone, Mail } from 'lucide-react';
+import { Menu, X, Instagram, Facebook, Phone, Mail, Download } from 'lucide-react';
 import logo from '../assets/logosemfundo.png';
+import regulamentoPDF from '../assets/programs/regulamento de compras .pdf';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -12,6 +13,15 @@ const Header = () => {
     { name: 'Galeria', href: '#galeria' },
     { name: 'Serviços e Contato', href: '#contato' }
   ];
+
+  const handleDownloadRegulamento = () => {
+    const link = document.createElement('a');
+    link.href = regulamentoPDF;
+    link.download = 'Regulamento de Compras.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
 
   return (
     <header className="bg-white shadow-lg sticky top-0 z-50">
@@ -47,6 +57,13 @@ const Header = () => {
                 {item.name}
               </a>
             ))}
+            <button
+              onClick={handleDownloadRegulamento}
+              className="flex items-center space-x-2 bg-primary text-white px-4 py-2 rounded-lg hover:bg-primary/90 transition-colors font-medium"
+            >
+              <Download size={18} />
+              <span>Regulamento de Compras</span>
+            </button>
           </nav>
 
           {/* Mobile menu button */}
@@ -72,6 +89,16 @@ const Header = () => {
                   {item.name}
                 </a>
               ))}
+              <button
+                onClick={() => {
+                  handleDownloadRegulamento();
+                  setIsMenuOpen(false);
+                }}
+                className="flex items-center space-x-2 bg-primary text-white px-4 py-2 rounded-lg hover:bg-primary/90 transition-colors font-medium w-full justify-center"
+              >
+                <Download size={18} />
+                <span>Regulamento de Compras</span>
+              </button>
             </nav>
           </div>
         )}

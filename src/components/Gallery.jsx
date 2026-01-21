@@ -56,6 +56,10 @@ import gallery51 from '../assets/programs/51.jpeg';
 import gallery52 from '../assets/programs/52.jpeg';
 import gallery53 from '../assets/programs/53.jpeg';
 import gallery54 from '../assets/programs/54.jpeg';
+import gallery55 from '../assets/programs/55.jpeg';
+import gallery56 from '../assets/programs/56.jpeg';
+import gallery57 from '../assets/programs/57.jpeg';
+import gallery58 from '../assets/programs/58.jpeg';
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState(null);
@@ -77,7 +81,7 @@ const Gallery = () => {
     { src: gallery13, alt: "Apoio às famílias", title: "Assistência Familiar", description: "Suporte integral às famílias, oferecendo orientação e recursos necessários." },
     { src: gallery14, alt: "Eventos beneficentes", title: "Solidariedade em Ação", description: "Eventos organizados para arrecadar fundos e promover a causa social." },
     { src: gallery15, alt: "Cuidado com o próximo", title: "Amor ao Próximo", description: "Iniciativas que refletem nosso compromisso com o cuidado e respeito ao próximo." },
-    { src: gallery16, alt: "Desenvolvimento social", title: "Crescimento Juntos", description: "Projetos que visam o desenvolvimento social e humano de toda a comunidade." },
+    { src: gallery16, alt: "Desenvolvimento social", title: "Crescimento Juntos", description: "Iniciativas de saúde que garantem o bem-estar e o desenvolvimento saudável da comunidade." },
     { src: gallery17, alt: "Projetos educacionais", title: "Educação para Todos", description: "Programas educativos acessíveis para transformar vidas através do conhecimento." },
     { src: gallery18, alt: "Saúde e bem-estar", title: "Vida Saudável", description: "Promoção de hábitos saudáveis e prevenção de doenças para uma vida melhor." },
     { src: gallery19, alt: "Inclusão social", title: "Inclusão Verdadeira", description: "Trabalhamos para construir uma sociedade mais justa e inclusiva para todos." },
@@ -115,10 +119,15 @@ const Gallery = () => {
     { src: gallery51, alt: "Idosos", title: "Respeito ao Idoso", description: "Valorizando a sabedoria e a experiência de vida." },
     { src: gallery52, alt: "Mulheres", title: "Força Feminina", description: "Empoderando mulheres e promovendo autonomia." },
     { src: gallery53, alt: "Juventude", title: "Juventude Ativa", description: "Protagonismo jovem na construção do futuro." },
-    { src: gallery54, alt: "Vida", title: "Celebração da Vida", description: "Comemorando cada conquista e cada superação." }
+    { src: gallery54, alt: "Vida", title: "Celebração da Vida", description: "Comemorando cada conquista e cada superação." },
+    { src: gallery55, alt: "Atendimento de saúde", title: "Saúde Humanizada", description: "Atendimento de saúde com foco na humanização e bem-estar do paciente." },
+    { src: gallery56, alt: "Prevenção e cuidados", title: "Prevenção", description: "Ações de prevenção e cuidados básicos para garantir a saúde da comunidade." },
+    { src: gallery57, alt: "Cuidados médicos", title: "Assistência Médica", description: "Oferecendo suporte e assistência médica para quem mais precisa." },
+    { src: gallery58, alt: "Bem-estar saúde", title: "Saúde Integral", description: "Promovendo a saúde integral, física e mental, para todos." }
   ];
 
   const openModal = (image, index) => {
+    e
     setSelectedImage(image);
     setCurrentIndex(index);
   };
@@ -231,4 +240,3 @@ const Gallery = () => {
 };
 
 export default Gallery;
-
